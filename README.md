@@ -21,6 +21,7 @@ Uma API para gerenciamento de agendamentos em um salão de beleza, desenvolvida 
   - Horários permitidos: múltiplos de 30 minutos e dentro de intervalos específicos.
   - Um cliente não pode agendar para outro.
   - Cliente não pode ter mais de 2 agendamentos no mesmo dia.
+  - Se o cliente desejar agendar mais de 3 horários no mesmo dia, deverá que entrar em contato com profissional.
   - Cancelamentos só podem ser feitos até 24 horas antes do horário agendado.
 
 ## 📦 Estrutura do Projeto

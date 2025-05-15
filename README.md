@@ -91,13 +91,6 @@ Uma API para gerenciamento de agendamentos em um salão de beleza, desenvolvida 
    ```
 5. Acesse a API em `http://localhost:8080`.
 
-## Testes
-
-Para executar os testes, utilize o comando:
-```bash
-mvn test
-```
-
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.

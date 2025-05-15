@@ -94,5 +94,3 @@ Uma API para gerenciamento de agendamentos em um salão de beleza, desenvolvida 
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
-```

@@ -1,6 +1,7 @@
 package com.salaobeleza.agendamento_api.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.salaobeleza.agendamento_api.dto.AgendamentoRequestDto;
 import com.salaobeleza.agendamento_api.model.enums.Servico;
 import com.salaobeleza.agendamento_api.model.enums.Status;
@@ -23,10 +24,12 @@ public class Agendamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonIgnoreProperties("agenda")
     @ManyToOne
     @JoinColumn(name = "cliente_id", nullable = false)
     private Usuario cliente;
 
+    @JsonIgnoreProperties("agenda")
     @ManyToOne
     @JoinColumn(name = "funcionario_id")
     private Usuario funcionario;

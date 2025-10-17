@@ -78,7 +78,7 @@ public class AgendamentoService {
             }
             var agendamentos = agendamentoRepository.findByClienteIdAndData(usuarioLogado.getId(), dto.data());
 
-            if (agendamentos.size() >= 2) {
+            if (agendamentos.size() >= 3) {
                 throw new IllegalArgumentException("Limite de 3 agendamentos por dia atingido.");
             }
             return usuarioLogado;

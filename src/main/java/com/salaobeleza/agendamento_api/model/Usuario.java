@@ -69,7 +69,7 @@ public class Usuario implements UserDetails {
         this.telefone = dto.telefone();
         this.username = dto.username();
         this.senha = dto.senha();
-        this.perfil = perfil.CLIENTE;
+        this.perfil = Perfil.CLIENTE;
         this.agenda = new Agenda();
         this.agenda.setTrancamento(new Trancamento(true, null));
     }

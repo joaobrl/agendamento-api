@@ -31,7 +31,7 @@ public class AgendaController {
     }
 
     @GetMapping("/profissional/{funcionarioId}")
-    @PreAuthorize("hasRole('RECEPCIONISTA', 'ADMINISTRADOR')")
+    @PreAuthorize("hasAnyRole('RECEPCIONISTA', 'ADMINISTRADOR')")
     public ResponseEntity<List<AgendaFuncionarioDto>> consultarAgendaProfissional(@PathVariable Long funcionarioId) {
         var agendamentos = agendaService.consultarAgendaDeProfissional(funcionarioId);
         return ResponseEntity.ok(agendamentos);
